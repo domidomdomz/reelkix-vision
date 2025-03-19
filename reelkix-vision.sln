@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "reelkix-vision-api", "reelkix-vision-api\reelkix-vision-api.njsproj", "{DC9D6802-E67A-40B9-85DD-88380C3F47CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC9D6802-E67A-40B9-85DD-88380C3F47CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9D6802-E67A-40B9-85DD-88380C3F47CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9D6802-E67A-40B9-85DD-88380C3F47CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9D6802-E67A-40B9-85DD-88380C3F47CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
