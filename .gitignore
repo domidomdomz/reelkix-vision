@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /reelkix-vision-api/.env
 /reelkix-vision-api/dist
+/reelkix-vision-api/server.js
