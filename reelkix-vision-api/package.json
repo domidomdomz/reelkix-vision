@@ -2,13 +2,14 @@
   "name": "reelkix-vision-api",
   "version": "0.0.0",
   "description": "reelkix-vision-api",
-  "main": "server.js",
+  "main": "index.js",
   "author": {
     "name": ""
   },
   "scripts": {
     "build": "tsc --build",
-    "clean": "tsc --build --clean"
+    "clean": "tsc --build --clean",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
