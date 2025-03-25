@@ -3,5 +3,6 @@ export interface ShoeDetails {
     model: string;
     colorway: string;
     sku: string;
+    confidence: number;
     text: string;
 }

@@ -7,6 +7,7 @@ export interface TogetherResponse {
     model?: string;
     colorway?: string;
     sku?: string;
+    confidence?: number;
     text?: string;
 }
 

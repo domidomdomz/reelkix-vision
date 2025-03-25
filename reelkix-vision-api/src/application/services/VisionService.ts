@@ -5,13 +5,14 @@ import { config } from '../../config/config';
 export class VisionService {
     private togetherClient: TogetherClient;
     private prompt: string =
-        `You are an API returning JSON responses only. Format your answer as valid JSON with keys "brand", "model", "colorway", "sku" and "text".
+        `You are an API returning formatted JSON responses only. Format your answer as valid JSON with keys "brand", "model", "colorway", "sku", "confidence" and "text".
 
         Identify the following details from the shoe in the image:
         - Brand
         - Model name
         - Colorway Alias
         - SKU
+        - Your confidence percentage in the accuracy of the details
 
         If the image is not a shoe, tell the user what is in his image and to provide a shoe image.`;
 
@@ -27,6 +28,7 @@ export class VisionService {
             model: result.model || '',
             colorway: result.colorway || '',
             sku: result.sku || '',
+            confidence: result.confidence || 0,
             text: result.text || ''
         };
     }
