@@ -1,11 +1,11 @@
 import { ShoeDetails } from '../../domain/models/ShoeDetails';
 import { TogetherClient } from '../../infrastructure/together/TogetherClient';
-import { config } from '../../config/config';
 
 export class VisionService {
     private togetherClient: TogetherClient;
     private prompt: string =
-        `You are an API returning formatted JSON responses only. Format your answer as valid JSON with keys "brand", "model", "colorway", "sku", "confidence" and "text".
+        `
+        If your confidence is 90% or above, format your answer as valid JSON with keys "brand", "model", "colorway", "sku", "confidence" and "text".
 
         Identify the following details from the shoe in the image:
         - Brand
@@ -13,8 +13,10 @@ export class VisionService {
         - Colorway Alias
         - SKU
         - Your confidence percentage in the accuracy of the details
+        - Other shoe details in text format
 
-        If the image is not a shoe, tell the user what is in his image and to provide a shoe image.`;
+        If the image is not a shoe, tell the user what is in his image and to provide a shoe image.
+        `;
 
     constructor(togetherClient: TogetherClient) {
         this.togetherClient = togetherClient;
